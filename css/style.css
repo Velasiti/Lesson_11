@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    background-color: blue;
+    z-index: 4; 
+}
+.menu__item {
+    position: relative;
+    display: inline-block;
+}
+.menu__item:not(:last-child) {
+    margin-right: 10px;
+}
+.menu__item:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu__link {
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 0px;
+}
+.sub-menu {
+    background-color: aqua;
+    color: gray;
+    padding: 15px;
+    position: absolute;
+    min-width: 180px;
+    top: 130%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+.sub-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+        
+}
+
+.bicycle__container{
+    margin-bottom: 20px;
+}
+
+.bicycle {
+    background: url("../img/italy-streets.jpg") 0 0/cover no-repeat;
+    min-height: 800px;
+    min-width: 1200px;
+    position: relative;
+}
+.bicycle__body img {
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    left: 60%;
+    bottom: 0;  
+}
+.position__container {
+    padding: 50px;
+    min-width: 850px;
+    position: relative;
+    color: yellowgreen;
+    margin: 0 auto;   
+}
+.position__item {
+    padding: 15px;
+    text-align: center;
+}
+.position__item--green{
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.position__item--yellow{
+    background-color: yellow;
+}
+
+.position__item--gray{
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 100%;
+}
+
+.position__item--orangered{
+    background-color: orangered;
+    position: sticky;
+    top: 20px;
+    z-index: 5;
+}
+.position__text{
+    color: blueviolet;
+}
+
